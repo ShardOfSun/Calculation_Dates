@@ -10,9 +10,9 @@ namespace MTP_Sem3_Lab3_Class_Date
         {
             //Дату задаём рандомно (включая некорректные даты)
             Random r = new Random();
-            int year = 2004;//(r.Next() % 10000);
-            int month = 4;//(r.Next() % 15);
-            int day = 30;//(r.Next() % 36);
+            int year = (r.Next() % 10000);
+            int month = (r.Next() % 15);
+            int day = (r.Next() % 36);
             
             //Объявляем объект класса
             Date d = new Date(day, month, year);
